@@ -14,3 +14,6 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery-3.3.1.min
+//= require jquery.steps
+//= require main
