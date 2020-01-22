@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  seller_title: MyString
+  seller_first_name: MyString
+  seller_last_name: MyString
+  seller_adress: MyString
+  seller_zipcode: MyString
+  seller_city: MyString
+  buyer_title: MyString
+  buyer_first_name: MyString
+  buyer_last_name: MyString
+  buyer_adress: MyString
+  buyer_zipcode: MyString
+  buyer_city: MyString
+  buyer_email: MyString
+  property_adress: MyString
+  property_zipcode: MyString
+  property_city: MyString
+  property_type: MyString
+  property_surface: MyString
+  property_price: 1.5
+  property_price_letters: MyString
+  date_max: 2020-01-22
+
+two:
+  seller_title: MyString
+  seller_first_name: MyString
+  seller_last_name: MyString
+  seller_adress: MyString
+  seller_zipcode: MyString
+  seller_city: MyString
+  buyer_title: MyString
+  buyer_first_name: MyString
+  buyer_last_name: MyString
+  buyer_adress: MyString
+  buyer_zipcode: MyString
+  buyer_city: MyString
+  buyer_email: MyString
+  property_adress: MyString
+  property_zipcode: MyString
+  property_city: MyString
+  property_type: MyString
+  property_surface: MyString
+  property_price: 1.5
+  property_price_letters: MyString
+  date_max: 2020-01-22
