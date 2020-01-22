@@ -1,6 +1,25 @@
 body {
 	margin:  0;
 }
+
+.submit-btn {
+  background-color: #25b45b; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 10% / 50%;
+}
+
+.submit-btn:hover {
+  background-color: #219c4f; /* Green */
+}
+
 .page-content {
 	width: 100%;
 	margin:  0 auto;
