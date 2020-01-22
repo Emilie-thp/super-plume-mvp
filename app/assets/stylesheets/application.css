@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require style
+ *= require nunito-font
+ *= require material-design-iconic-font.min
  */
