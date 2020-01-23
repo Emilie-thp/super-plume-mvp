@@ -28,13 +28,27 @@ class OffersController < ApplicationController
   										 date_max:params[:year]+"-"+params[:month]+"-"+params[:day]
   										)
   	if @offer.save
-      redirect_to offer_path(@offer)
+      redirect_to offer_path(@offer, format: :pdf)
     else 
     	render "new"
     end
   end
 
   def show
+    @offer = Offer.find(params[:id])
+
+    respond_to do |format|
+        format.html
+        format.pdf do
+            render pdf: "Offre_#{@offer.buyer_last_name}_#{@offer.created_at.strftime("%Y-%m-%d")}",
+            page_size: 'A4',
+            template: "offers/show.html.erb",
+            orientation: "Portrait",
+            lowquality: true,
+            zoom: 1,
+            dpi: 75
+        end
+    end
   end
 
 
