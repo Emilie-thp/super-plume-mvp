@@ -39,14 +39,14 @@
 
                 <div class="form-row">
                   <div class="form-holder form-holder-2">
-                    <label for="address">Email</label>
+                    <label for="adress">Email</label>
                     <%= f.text_field :buyer_email, class: 'form-control', placeholder:"ex: patricia@email.com" %>
                   </div>
                 </div>
 
                  <div class="form-row">
                   <div class="form-holder form-holder-2">
-                    <label for="address">Adresse de l'acheteur</label>
+                    <label for="adress">Adresse de l'acheteur</label>
                     <%= f.text_field :buyer_adress, class: 'form-control', placeholder:"ex: 12 rue des Rosiers" %>
                     <span><i class="zmdi zmdi-pin"></i></span>
                   </div>
@@ -88,7 +88,7 @@
 
                  <div class="form-row">
                   <div class="form-holder form-holder-2">
-                    <label for="address">Adresse du vendeur</label>
+                    <label for="adress">Adresse du vendeur</label>
                     <%= f.text_field :seller_adress, class: 'form-control', placeholder:"ex: 12 rue des Rosiers" %>
                     <span><i class="zmdi zmdi-pin"></i></span>
                   </div>
@@ -134,7 +134,7 @@
 
                 <div class="form-row">
                   <div class="form-holder form-holder-2">
-                    <label for="address">Adresse du bien</label>
+                    <label for="adress">Adresse du bien</label>
                     <%= f.text_field :property_adress, class: 'form-control', placeholder:"ex: 12 rue des Rosiers" %>
                     <span><i class="zmdi zmdi-pin"></i></span>
                   </div>
@@ -196,31 +196,39 @@
                     <tbody>
                       <tr class="space-row">
                         <th>Acheteur</th>
-                        <td>Name</td>
+                        <td id="buyer_fullname-val"></td>
                       </tr>
+                      <tr class="space-row">
+                        <th>Email de l'acheteur</th>
+                        <td id="buyer_email-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Adresse de l'acheteur</th>
+                        <td id="buyer_adress-val"></td>
+                      </tr>                      
                       <tr class="space-row">
                         <th>Vendeur</th>
-                        <td id="email-val"></td>
+                        <td id="seller_fullname-val"></td>
                       </tr>
                       <tr class="space-row">
-                        <th>Phone Number:</th>
-                        <td id="phone-val"></td>
+                        <th>Adresse du vendeur</th>
+                        <td id="seller_adress-val"></td>
                       </tr>
                       <tr class="space-row">
-                        <th>Address Location:</th>
-                        <td id="address-val"></td>
+                        <th>Description du bien</th>
+                        <td id="property_description-val"></td>
                       </tr>
                       <tr class="space-row">
-                        <th>Gender:</th>
-                        <td id="gender-val"></td>
+                        <th>Adresse du bien</th>
+                        <td id="property_adress-val"></td>
                       </tr>
                       <tr class="space-row">
-                        <th>Account Name:</th>
-                        <td id="account-name-val"></td>
+                        <th>Prix du bien</th>
+                        <td id="property_price-val"></td>
                       </tr>
                       <tr class="space-row">
-                        <th>Account Number:</th>
-                        <td id="account-number-val"></td>
+                        <th>Date limite de l'offre</th>
+                        <td id="date_max-val"></td>
                       </tr>
                     </tbody>
                   </table>
