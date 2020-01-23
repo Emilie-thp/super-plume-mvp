@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<title>Super-plume_Lettre d'offre_PDF</title>
+</head>
+<body>
+
+<div style="padding:40px;background-color:#FFFFFF; margin :0 auto;color:#000000;"> 
+	<table width="100%" cellspacing="0" cellpadding="6" border="0"> 
+		<tbody>
+			<tr> 
+				<td>
+					<table width="100%"> 
+		<tbody>
+			<tr> 
+				<td width="55%"><font size="3" face="Verdana"><%=@offer.buyer_title%> <%=@offer.buyer_first_name%> <%=@offer.buyer_last_name %>
+					<br> <%=@offer.buyer_adress%> 
+					<br> <%=@offer.buyer_zipcode%> <%=@offer.buyer_city%>
+					<br> <%=@offer.buyer_email%></font><br>
+				</td> 
+				<td>&nbsp;</td> 
+			</tr> 
+			<tr> 
+				<td width="55%">&nbsp;</td> 
+				<td><font size="3" face="Verdana"><%=@offer.seller_title%> <%=@offer.seller_first_name%> <%=@offer.seller_last_name %>
+ 					<br> <%=@offer.seller_adress%> 
+					<br> <%=@offer.seller_zipcode%> <%=@offer.seller_city%> <br>
+				</td> 
+			</tr> 
+			<tr> 
+				<td width="55%">&nbsp;</td> 
+				<td>&nbsp;</td> 
+			</tr> 
+		</tbody>
+	</table>
+<br><br>
+<br><br>
+					<p><font size="3" face="Verdana"><b>Objet : Proposition d’achat du bien situé au <%=@offer.property_adress%>, <%=@offer.property_zipcode%> <%=@offer.property_city%></b></font></p><br>
+					<p><font size="3" face="Verdana"><%=@offer.seller_title%>,</font></p>
+					<p><font size="3" face="Verdana">À la date du <%=@offer.created_at.strftime("%d/%m/%Y")%>, <%=@offer.buyer_title%> <%=@offer.buyer_last_name%> demande à acquérir, en cas d’acceptation de la présente offre, de façon ferme et irrévocable, le bien désigné ci-dessous :
+					</font></p>
+					<p><font size="3" face="Verdana">Type de bien : <%=@offer.property_type%> </font></p>
+					<p><font size="3" face="Verdana">Adresse: <%=@offer.property_adress%>, <%=@offer.property_zipcode%> <%=@offer.property_city%></font></p>
+					<p><font size="3" face="Verdana">Superficie : <%=@offer.property_surface%> m² loi Carrez</font></p>
+					<p><font size="3" face="Verdana">Prix : <%=@offer.property_price%> € (<%=@offer.property_price_letters%>) </font></p>
+					<p><font size="3" face="Verdana">Ainsi, je vous propose d’acheter ce bien au prix de <%=@offer.property_price%> € (<%=@offer.property_price_letters%>), hors frais de notaire, hors frais d’agence, qui sera payé intégralement le jour de la signature de l’acte authentique de vente.</font></p>
+					<p><font size="3" face="Verdana">La présente offre d’achat est faite à <%=@offer.seller_title%> <%=@offer.seller_last_name%>.</font></p>
+					<p><font size="3" face="Verdana">
+					En l’absence d’acceptation de la présente offre d’achat, celle-ci s’éteindra le <%=@offer.date_max.strftime("%d/%m/%Y")%>.</font></p>
+					<p><font size="3" face="Verdana">L’acceptation du Vendeur pourra être formulée par tout moyen au domicile du Promettant ci-dessus désigné.</font></p>
+					<br>
+
+					<p><font size="3" face="Verdana">Le <%=@offer.created_at.strftime("%d/%m/%Y")%>,</font></p>
+					<br>
+					<p><font size="3" face="Verdana">Signature :<br> <br> </font></p> 
+				</td> 
+			</tr> 
+		</tbody>
+	</table> 
+</div>
+
+</body>
+</html>
+
